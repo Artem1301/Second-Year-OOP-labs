@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="rps.gui.controller.GameViewController">
+   <top>
+      <VBox alignment="CENTER" spacing="10">
+         <Label fx:id="welcomeLabel" text="Welcome to the classic Rock, Paper and Scissor game!" />
+         <TextField fx:id="playerNameField" promptText="Enter your name" />
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" spacing="10">
+         <Label fx:id="opponentLabel" />
+         <Button text="Rock" onAction="#playRock" />
+         <Button text="Paper" onAction="#playPaper" />
+         <Button text="Scissor" onAction="#playScissor" />
+         <Button text="Exit" onAction="#exitGame" />
+      </VBox>
+   </center>
+   <bottom>
+      <Label fx:id="gameStatusLabel" />
+   </bottom>
+</BorderPane>
